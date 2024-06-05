@@ -128,7 +128,7 @@
             bindings = <
 &kp ESC		&kp N1	&kp N2	&kp N3	&kp N4	&kp N5					&kp N6	&kp N7	&kp N8		&kp N9	&kp N0		&trans
 &kp TAB		&kp Q	&kp W	&kp E	&kp R	&kp T					&kp Y	&kp U	&kp I		&kp O	&kp P		&trans
-&kp CAPSLOCK	&kp A	&kp S	&kp D	&kp F	&kp G					&kp H	&kp J	&kpK		&kp L	&kp ENTER	&trans
+&kp CAPSLOCK	&kp A	&kp S	&kp D	&kp F	&kp G					&kp H	&kp J	&kp K		&kp L	&kp ENTER	&trans
 &trans		&kp Z	&kp X	&kp C	&kp V	&kp B	&kp A	&kp B	&kp C	&kp D	&kp N	&kp M	&kp COMMA	&kp DOT	&kp SLASH	&trans
 		&kp Q	&kp W	&kp E	&kp R	&kp T	&kp A	&kp B	&kp C	&kp D	&kp Y	&kp U	&kp I	&kp O	&kp SLASH	
 								&kp B	&kp C
@@ -140,7 +140,7 @@
             bindings = <
 &kp ESC		&kp N1	&kp N2	&kp N3	&kp N4	&kp N5					&kp N6	&kp N7	&kp N8		&kp N9	&kp N0		&trans
 &kp TAB		&kp Q	&kp W	&kp E	&kp R	&kp T					&kp Y	&kp U	&kp I		&kp O	&kp P		&trans
-&kp CAPSLOCK	&kp A	&kp S	&kp D	&kp F	&kp G					&kp H	&kp J	&kpK		&kp L	&kp ENTER	&trans
+&kp CAPSLOCK	&kp A	&kp S	&kp D	&kp F	&kp G					&kp H	&kp J	&kp K		&kp L	&kp ENTER	&trans
 &trans		&kp Z	&kp X	&kp C	&kp V	&kp B	&kp A	&kp B	&kp C	&kp D	&kp N	&kp M	&kp COMMA	&kp DOT	&kp SLASH	&trans
 		&kp Q	&kp W	&kp E	&kp R	&kp T	&kp A	&kp B	&kp C	&kp D	&kp Y	&kp U	&kp I	&kp O	&kp SLASH	
 								&kp B	&kp C
@@ -152,7 +152,7 @@ label = "Number";
             bindings = <
 &kp ESC		&kp N1	&kp N2	&kp N3	&kp N4	&kp N5					&kp N6	&kp N7	&kp N8		&kp N9	&kp N0		&trans
 &kp TAB		&kp Q	&kp W	&kp E	&kp R	&kp T					&kp Y	&kp U	&kp I		&kp O	&kp P		&trans
-&kp CAPSLOCK	&kp A	&kp S	&kp D	&kp F	&kp G					&kp H	&kp J	&kpK		&kp L	&kp ENTER	&trans
+&kp CAPSLOCK	&kp A	&kp S	&kp D	&kp F	&kp G					&kp H	&kp J	&kp K		&kp L	&kp ENTER	&trans
 &trans		&kp Z	&kp X	&kp C	&kp V	&kp B	&kp A	&kp B	&kp C	&kp D	&kp N	&kp M	&kp COMMA	&kp DOT	&kp SLASH	&trans
 		&kp Q	&kp W	&kp E	&kp R	&kp T	&kp A	&kp B	&kp C	&kp D	&kp Y	&kp U	&kp I	&kp O	&kp SLASH	
 								&kp B	&kp C
@@ -164,7 +164,7 @@ label = "Icon";
             bindings = <
 &kp ESC		&kp N1	&kp N2	&kp N3	&kp N4	&kp N5					&kp N6	&kp N7	&kp N8		&kp N9	&kp N0		&trans
 &kp TAB		&kp Q	&kp W	&kp E	&kp R	&kp T					&kp Y	&kp U	&kp I		&kp O	&kp P		&trans
-&kp CAPSLOCK	&kp A	&kp S	&kp D	&kp F	&kp G					&kp H	&kp J	&kpK		&kp L	&kp ENTER	&trans
+&kp CAPSLOCK	&kp A	&kp S	&kp D	&kp F	&kp G					&kp H	&kp J	&kp K		&kp L	&kp ENTER	&trans
 &trans		&kp Z	&kp X	&kp C	&kp V	&kp B	&kp A	&kp B	&kp C	&kp D	&kp N	&kp M	&kp COMMA	&kp DOT	&kp SLASH	&trans
 		&kp Q	&kp W	&kp E	&kp R	&kp T	&kp A	&kp B	&kp C	&kp D	&kp Y	&kp U	&kp I	&kp O	&kp SLASH	
 								&kp B	&kp C
@@ -176,7 +176,7 @@ label = "L pad";
             bindings = <
 &kp ESC		&kp N1	&kp N2	&kp N3	&kp N4	&kp N5					&kp N6	&kp N7	&kp N8		&kp N9	&kp N0		&trans
 &kp TAB		&kp Q	&kp W	&kp E	&kp R	&kp T					&kp Y	&kp U	&kp I		&kp O	&kp P		&trans
-&kp CAPSLOCK	&kp A	&kp S	&kp D	&kp F	&kp G					&kp H	&kp J	&kpK		&kp L	&kp ENTER	&trans
+&kp CAPSLOCK	&kp A	&kp S	&kp D	&kp F	&kp G					&kp H	&kp J	&kp K		&kp L	&kp ENTER	&trans
 &trans		&kp Z	&kp X	&kp C	&kp V	&kp B	&kp A	&kp B	&kp C	&kp D	&kp N	&kp M	&kp COMMA	&kp DOT	&kp SLASH	&trans
 		&kp Q	&kp W	&kp E	&kp R	&kp T	&kp A	&kp B	&kp C	&kp D	&kp Y	&kp U	&kp I	&kp O	&kp SLASH	
 								&kp B	&kp C
@@ -188,7 +188,7 @@ label = "Ble";
             bindings = <
 &kp ESC		&kp N1	&kp N2	&kp N3	&kp N4	&kp N5					&kp N6	&kp N7	&kp N8		&kp N9	&kp N0		&trans
 &kp TAB		&kp Q	&kp W	&kp E	&kp R	&kp T					&kp Y	&kp U	&kp I		&kp O	&kp P		&trans
-&kp CAPSLOCK	&kp A	&kp S	&kp D	&kp F	&kp G					&kp H	&kp J	&kpK		&kp L	&kp ENTER	&trans
+&kp CAPSLOCK	&kp A	&kp S	&kp D	&kp F	&kp G					&kp H	&kp J	&kp K		&kp L	&kp ENTER	&trans
 &trans		&kp Z	&kp X	&kp C	&kp V	&kp B	&kp A	&kp B	&kp C	&kp D	&kp N	&kp M	&kp COMMA	&kp DOT	&kp SLASH	&trans
 		&kp Q	&kp W	&kp E	&kp R	&kp T	&kp A	&kp B	&kp C	&kp D	&kp Y	&kp U	&kp I	&kp O	&kp SLASH	
 								&kp B	&kp C
@@ -200,7 +200,7 @@ label = "Arrow";
             bindings = <
 &kp ESC		&kp N1	&kp N2	&kp N3	&kp N4	&kp N5					&kp N6	&kp N7	&kp N8		&kp N9	&kp N0		&trans
 &kp TAB		&kp Q	&kp W	&kp E	&kp R	&kp T					&kp Y	&kp U	&kp I		&kp O	&kp P		&trans
-&kp CAPSLOCK	&kp A	&kp S	&kp D	&kp F	&kp G					&kp H	&kp J	&kpK		&kp L	&kp ENTER	&trans
+&kp CAPSLOCK	&kp A	&kp S	&kp D	&kp F	&kp G					&kp H	&kp J	&kp K		&kp L	&kp ENTER	&trans
 &trans		&kp Z	&kp X	&kp C	&kp V	&kp B	&kp A	&kp B	&kp C	&kp D	&kp N	&kp M	&kp COMMA	&kp DOT	&kp SLASH	&trans
 		&kp Q	&kp W	&kp E	&kp R	&kp T	&kp A	&kp B	&kp C	&kp D	&kp Y	&kp U	&kp I	&kp O	&kp SLASH	
 								&kp B	&kp C
