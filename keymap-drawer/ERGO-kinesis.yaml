@@ -32,7 +32,7 @@ layers:
   - G
   - H
   - J
-  - '&kpK'
+  - K
   - L
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -101,7 +101,7 @@ layers:
   - G
   - H
   - J
-  - '&kpK'
+  - K
   - L
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -170,7 +170,7 @@ layers:
   - G
   - H
   - J
-  - '&kpK'
+  - K
   - L
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -239,7 +239,7 @@ layers:
   - G
   - H
   - J
-  - '&kpK'
+  - K
   - L
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -308,7 +308,7 @@ layers:
   - G
   - H
   - J
-  - '&kpK'
+  - K
   - L
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -377,7 +377,7 @@ layers:
   - G
   - H
   - J
-  - '&kpK'
+  - K
   - L
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -446,7 +446,7 @@ layers:
   - G
   - H
   - J
-  - '&kpK'
+  - K
   - L
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:transfer$$', type: trans}
