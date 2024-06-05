@@ -1,0 +1,13 @@
+file_format: "1"
+id: ERGO-kinesis
+name: ERGO-kinesis
+type: shield
+url:
+requires:
+  - pro_micro
+exposes:
+features:
+  - keys
+siblings:
+  - ERGO-kinesis_left
+  - ERGO-kinesis_right

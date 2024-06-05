@@ -1,0 +1,211 @@
+/*
+ * Copyright (c) 2020 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include <behaviors/mouse_keys.dtsi>
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/mouse.h>
+#include <dt-bindings/zmk/outputs.h>
+
+&mt {
+    tapping-term-ms = <200>;
+    flavor = "tap-preferred";
+};
+
+&sk {
+    release-after-ms = <2000>;
+    quick-release;
+};
+
+/ {
+    combos {
+        compatible = "zmk,combos";
+
+        esc {
+            bindings = <&kp ESC>;
+            key-positions = <0 1>;
+        };
+
+        del {
+            bindings = <&kp DELETE>;
+            key-positions = <10 11>;
+        };
+
+        caps {
+            bindings = <&kp CAPSLOCK>;
+            key-positions = <20 21>;
+        };
+
+        bk {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <8 9>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <28 29>;
+        };
+
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <18 19>;
+        };
+
+        home {
+            bindings = <&kp HOME>;
+            key-positions = <2 3>;
+        };
+
+        end {
+            bindings = <&kp END>;
+            key-positions = <12 13>;
+        };
+
+        pu {
+            bindings = <&kp PG_UP>;
+            key-positions = <6 7>;
+        };
+
+        pd {
+            bindings = <&kp PAGE_DOWN>;
+            key-positions = <16 17>;
+        };
+    };
+
+    behaviors {
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+
+            quick-tap-ms = <180>;
+            global-quick-tap;
+        };
+
+     ltq: ltq {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LTQ";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <180>;
+        };
+
+        as: as {
+            compatible = "zmk,behavior-hold-tap";
+            label = "AUTO_SHIFT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <135>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+        };
+    };
+
+    macros {
+        new_macro: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(C) &kp H &kp L &kp DOT &kp N8 &kp N8 &kp N0 &kp N6 &kp N0 &kp N2 &kp EXCL &kp AT &kp POUND &kp DLLR &kp PRCNT &kp ENTER>;
+            label = "NEW_MACRO";
+        };
+    };
+
+    keymap {
+        compatible = "zmk,keymap";
+
+        BASE {
+            bindings = <
+&kp ESC		&kp N1	&kp N2	&kp N3	&kp N4	&kp N5					&kp N6	&kp N7	&kp N8		&kp N9	&kp N0		&trans
+&kp TAB		&kp Q	&kp W	&kp E	&kp R	&kp T					&kp Y	&kp U	&kp I		&kp O	&kp P		&trans
+&kp CAPSLOCK	&kp A	&kp S	&kp D	&kp F	&kp G					&kp H	&kp J	&kpK		&kp L	&kp ENTER	&trans
+&trans		&kp Z	&kp X	&kp C	&kp V	&kp B	&kp A	&kp B	&kp C	&kp D	&kp N	&kp M	&kp COMMA	&kp DOT	&kp SLASH	&trans
+		&kp Q	&kp W	&kp E	&kp R	&kp T	&kp A	&kp B	&kp C	&kp D	&kp Y	&kp U	&kp I	&kp O	&kp SLASH	
+								&kp B	&kp C
+            >;
+ label = "Base";
+        };
+
+        NUMBER {
+            bindings = <
+&kp ESC		&kp N1	&kp N2	&kp N3	&kp N4	&kp N5					&kp N6	&kp N7	&kp N8		&kp N9	&kp N0		&trans
+&kp TAB		&kp Q	&kp W	&kp E	&kp R	&kp T					&kp Y	&kp U	&kp I		&kp O	&kp P		&trans
+&kp CAPSLOCK	&kp A	&kp S	&kp D	&kp F	&kp G					&kp H	&kp J	&kpK		&kp L	&kp ENTER	&trans
+&trans		&kp Z	&kp X	&kp C	&kp V	&kp B	&kp A	&kp B	&kp C	&kp D	&kp N	&kp M	&kp COMMA	&kp DOT	&kp SLASH	&trans
+		&kp Q	&kp W	&kp E	&kp R	&kp T	&kp A	&kp B	&kp C	&kp D	&kp Y	&kp U	&kp I	&kp O	&kp SLASH	
+								&kp B	&kp C
+            >;
+label = "Number";
+        };
+
+        ICON {
+            bindings = <
+&kp ESC		&kp N1	&kp N2	&kp N3	&kp N4	&kp N5					&kp N6	&kp N7	&kp N8		&kp N9	&kp N0		&trans
+&kp TAB		&kp Q	&kp W	&kp E	&kp R	&kp T					&kp Y	&kp U	&kp I		&kp O	&kp P		&trans
+&kp CAPSLOCK	&kp A	&kp S	&kp D	&kp F	&kp G					&kp H	&kp J	&kpK		&kp L	&kp ENTER	&trans
+&trans		&kp Z	&kp X	&kp C	&kp V	&kp B	&kp A	&kp B	&kp C	&kp D	&kp N	&kp M	&kp COMMA	&kp DOT	&kp SLASH	&trans
+		&kp Q	&kp W	&kp E	&kp R	&kp T	&kp A	&kp B	&kp C	&kp D	&kp Y	&kp U	&kp I	&kp O	&kp SLASH	
+								&kp B	&kp C
+            >;
+label = "Icon";
+        };
+
+        LEFTPAD {
+            bindings = <
+&kp ESC		&kp N1	&kp N2	&kp N3	&kp N4	&kp N5					&kp N6	&kp N7	&kp N8		&kp N9	&kp N0		&trans
+&kp TAB		&kp Q	&kp W	&kp E	&kp R	&kp T					&kp Y	&kp U	&kp I		&kp O	&kp P		&trans
+&kp CAPSLOCK	&kp A	&kp S	&kp D	&kp F	&kp G					&kp H	&kp J	&kpK		&kp L	&kp ENTER	&trans
+&trans		&kp Z	&kp X	&kp C	&kp V	&kp B	&kp A	&kp B	&kp C	&kp D	&kp N	&kp M	&kp COMMA	&kp DOT	&kp SLASH	&trans
+		&kp Q	&kp W	&kp E	&kp R	&kp T	&kp A	&kp B	&kp C	&kp D	&kp Y	&kp U	&kp I	&kp O	&kp SLASH	
+								&kp B	&kp C
+            >;
+label = "L pad";
+        };
+
+        BLUETOOTH {
+            bindings = <
+&kp ESC		&kp N1	&kp N2	&kp N3	&kp N4	&kp N5					&kp N6	&kp N7	&kp N8		&kp N9	&kp N0		&trans
+&kp TAB		&kp Q	&kp W	&kp E	&kp R	&kp T					&kp Y	&kp U	&kp I		&kp O	&kp P		&trans
+&kp CAPSLOCK	&kp A	&kp S	&kp D	&kp F	&kp G					&kp H	&kp J	&kpK		&kp L	&kp ENTER	&trans
+&trans		&kp Z	&kp X	&kp C	&kp V	&kp B	&kp A	&kp B	&kp C	&kp D	&kp N	&kp M	&kp COMMA	&kp DOT	&kp SLASH	&trans
+		&kp Q	&kp W	&kp E	&kp R	&kp T	&kp A	&kp B	&kp C	&kp D	&kp Y	&kp U	&kp I	&kp O	&kp SLASH	
+								&kp B	&kp C
+            >;
+label = "Ble";
+        };
+
+        ARROWS {
+            bindings = <
+&kp ESC		&kp N1	&kp N2	&kp N3	&kp N4	&kp N5					&kp N6	&kp N7	&kp N8		&kp N9	&kp N0		&trans
+&kp TAB		&kp Q	&kp W	&kp E	&kp R	&kp T					&kp Y	&kp U	&kp I		&kp O	&kp P		&trans
+&kp CAPSLOCK	&kp A	&kp S	&kp D	&kp F	&kp G					&kp H	&kp J	&kpK		&kp L	&kp ENTER	&trans
+&trans		&kp Z	&kp X	&kp C	&kp V	&kp B	&kp A	&kp B	&kp C	&kp D	&kp N	&kp M	&kp COMMA	&kp DOT	&kp SLASH	&trans
+		&kp Q	&kp W	&kp E	&kp R	&kp T	&kp A	&kp B	&kp C	&kp D	&kp Y	&kp U	&kp I	&kp O	&kp SLASH	
+								&kp B	&kp C
+            >;
+label = "Arrow";
+        };
+
+        CONTROLS {
+            bindings = <
+&kp ESC		&kp N1	&kp N2	&kp N3	&kp N4	&kp N5					&kp N6	&kp N7	&kp N8		&kp N9	&kp N0		&trans
+&kp TAB		&kp Q	&kp W	&kp E	&kp R	&kp T					&kp Y	&kp U	&kp I		&kp O	&kp P		&trans
+&kp CAPSLOCK	&kp A	&kp S	&kp D	&kp F	&kp G					&kp H	&kp J	&kpK		&kp L	&kp ENTER	&trans
+&trans		&kp Z	&kp X	&kp C	&kp V	&kp B	&kp A	&kp B	&kp C	&kp D	&kp N	&kp M	&kp COMMA	&kp DOT	&kp SLASH	&trans
+		&kp Q	&kp W	&kp E	&kp R	&kp T	&kp A	&kp B	&kp C	&kp D	&kp Y	&kp U	&kp I	&kp O	&kp SLASH	
+								&kp B	&kp C
+            >;
+label = "Ctrls";
+        };
+    };
+};
