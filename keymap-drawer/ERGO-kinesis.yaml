@@ -1,5 +1,5 @@
 layers:
-  BASE:
+  Base:
   - $$mdi:keyboard-esc$$
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
@@ -29,8 +29,8 @@ layers:
   - S
   - D
   - F
-  - {t: G, h: ICON}
-  - {t: H, h: ICON}
+  - {t: G, h: Icon}
+  - {t: H, h: Icon}
   - J
   - K
   - L
@@ -52,12 +52,12 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - $$mdi:apple-keyboard-shift$$
-  - NUMBER
+  - Number
   - LGUI
   - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-tab$$
   - $$mdi:apple-keyboard-control$$
-  - NUMBER
+  - Number
   - PRINTSCREEN
   - Ins
   - $$mdi:keyboard-space$$
@@ -68,12 +68,12 @@ layers:
   - $$mdi:arrow-right-bold$$
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:backspace$$', type: backspace}
-  NUMBER:
+  Number:
   - {t: '-', s: _}
   - {t: '=', s: +}
-  - {t: Sft+ =, s: Sft+ +}
+  - {t: Sft+=, s: Sft++}
   - {t: '-', s: _}
-  - {t: Sft+ 8, s: Sft+ *}
+  - {t: Sft+8, s: Sft+*}
   - {t: /, s: '?'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -82,8 +82,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: Sft+ 9, s: Sft+ (}
-  - {t: Sft+ 0, s: Sft+ )}
+  - {t: Sft+9, s: Sft+(}
+  - {t: Sft+0, s: Sft+)}
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
   - {t: '9', s: (}
@@ -137,7 +137,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  ICON:
+  Icon:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -206,7 +206,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  LEFTPAD:
+  L pad:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -275,7 +275,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  BLUETOOTH:
+  Ble:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
